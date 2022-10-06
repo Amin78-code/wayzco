@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/contact-style.css">
+  <title>Contact Us - Wayzco.com</title>
+</head>
+
+<body>
+  <header id="header">
+    <!-- top header start -->
+    <div class="bg-[#525252] hidden md:block">
+      <div class="max-w-[1140px] h-[35px] m-auto px-[20px] py-1">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="mailto:support@wayzco.com">
+              <i
+                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                class="text-[16px]  ml-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+            </a>
+          </div>
+          <div class=" flex gap-x-[24px] text-[15px]">
+            <a href="https://www.facebook.com/wayz.sa.7"> <i
+                class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+            <a href="https://www.instagram.com/wayzsa/"> <i
+                class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+            <a href="https://twitter.com/wayzsa1"> <i
+                class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header end -->
+    <!-- main navigation start -->
+    <div class="bg-[#F9F9F9] sm:bg-[#fff] border-b-[1px] border-[#ddd]">
+      <div class="max-w-[1140px] h-[60px] sm:h-[80px] m-auto px-[20px] py-[16px] sm:p-[22px]">
+        <div class="flex justify-between items-center">
+          <div class="image flex justify-center items-center gap-x-[10px] sm:gap-x-[20px]">
+            <i class="fa-solid fa-bars text-[22px] text-[#939598] cursor-pointer block sm:hidden"
+              onclick="openMobileMenu()"></i>
+            <a href="/">
+              <img src="./assets/images/logo/logo.svg" width="150px" height="36px" class="h-[28px] sm:h-[auto]"
+                alt="logo-img" />
+            </a>
+          </div>
+          <div class="hidden sm:block ">
+            <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+              <li class="hover:text-[#91C33F] text-[#91C33F]"><a href="index.html">Home</a></li>
+              <li class="hover:text-[#91C33F]">
+                <a href="our-services.html">Our Service</a>
+              </li>
+              <li class="hover:text-[#91C33F]"><a href="faq.html">FAQs</a>
+              </li>
+              <li class="hover:text-[#91C33F]"><a href="contact.html">Contact</a></li>
+              <li class="hover:text-[#91C33F] cursor-pointer"><a>العربية</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main navigation end -->
+    <!-- mobile menu start -->
+    <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-whi te z-[5]  hide">
+      <div id=" " class=" w-full h-full bg-[#fff] w-[80%] flex flex-col justify-between hide-inner">
+        <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+          onclick="openMobileMenu()"></i>
+        <ul class="py-[70px] text-[22px] text-[#333333]">
+          <li class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+            <a href="our-services.html">Our Service</a>
+          </li>
+          <li class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+            <a href="faq.html">FAQs</a>
+          </li>
+          <li class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+            <a>العربية</a>
+          </li>
+        </ul>
+        <div class="h-[70px] border-t-[1px] border-[#ccc] flex justify-between items-center gap-x-[20px] px-[20px]">
+          <div class=" flex gap-x-[24px] text-[15px]">
+            <a href="https://www.facebook.com/wayz.sa.7"><i
+                class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+            <a href="https://www.instagram.com/wayzsa/"> <i
+                class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+            <a href="https://twitter.com/wayzsa1"> <i
+                class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+          </div>
+          <div class="flex justify-between items-center gap-x-[10px]">
+            <i class="fa-solid fa-magnifying-glass" onclick="openMobileSearchMenu()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+    <!-- mobile search menu start -->
+    <div id="mobile_search_box"
+      class="fixed top-0 h-0 w-full h-full flex justify-center items-center z-[5] hide-from-top">
+      <div id=""
+        class="w-full h-[97.7%] bg-[#fff] w-[96%] flex flex-col justify-between hide-from-top-inner px-[30px] py-[70px]">
+        <i class="fa-solid fa-xmark absolute right-[34px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+          onclick="openMobileSearchMenu()"></i>
+
+        <div class="text-left">
+          <label class="text-gray-400">What are you looking for?</label>
+          <div class="relative  ">
+            <input id="text_to_search"
+              class="w-full border py-[10px] font-normal text-[30px] leading-4 text-gray-600 placeholder-gray-400 italic border-0 border-b-[1px] border-[#ddd] outline-none pr-[70px]"
+              type="text" placeholder="Start Typing..." oninput="changeHandler(event)" />
+            <div id="clear_text"
+              class="absolute right-0 top-[22px]  justify-end items-center gap-x-[4px] text-[#CED2D9] hide-it"
+              onclick="removeText()">
+              <i class="fa-solid fa-circle-xmark"></i>
+              <span>Clear</span>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <h5 class="text-[20px] font-bold py-[20px] text-gray-300">No results found</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile search menu end -->
+  </header>
+  <main class="h-[auto] pt-[20px] md:pt-[50px]">
+    <!-- section start -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-[1520px] m-auto p-1 pt-[25px]">
+        <h1
+          class="text-[grey] lg:text-[50px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold text-center pb-0 sm:pb-[20px]">
+          Contact us
+        </h1>
+        <div class="flex flex-col lg:flex-row pt-[20px]">
+          <div class="w-[100%]  lg:w-[748px] lg:h-[auto]  px-[20px] pt-[10px] pb-[20px] before:absolute before:bg-[#F9F9F9] before:w-[50%] before:h-full before:top-[90px] before:left-0 before:z-[-1]">
+            <h2 class="text-[25px] sm:text-[30px] text-[#525252] w-[100%] lg:ml-[18%]">Send a Message</h2>
+            <form
+              class="flex flex-col justify-center items-center gap-y-[18px] lg:gap-y-[10px] text-[18px] pt-[15px] sm:pt-[5px] mx-auto">
+              <input type="text" placeholder="Full Name"
+                class="bg-transparent pb-[10px] outline-none border-0 border-b-2 border-[#e6e6e6] w-[100%] lg:w-[450px] lg:h-[50px] italic" />
+              <input type="email" placeholder="Email Address"
+                class="bg-transparent pb-[10px] outline-none border-0 border-b-2 border-[#e6e6e6] w-[100%] lg:w-[450px] lg:h-[50px] italic" />
+              <input type="text" placeholder="Phone"
+                class="  bg-transparent pb-[10px] outline-none border-0 border-b-2 border-[#e6e6e6] w-[100%] lg:w-[450px] lg:h-[50px] italic" />
+              <input type="text" placeholder="Subject"
+                class="bg-transparent pb-[10px] outline-none border-0 border-b-2 border-[#e6e6e6] w-[100%] lg:w-[450px] lg:h-[50px] italic" />
+              <textarea placeholder="Message" cols="40" rows="8"
+                class="bg-transparent pb-[10px] outline-none w-[100%] lg:w-[450px] overflow-y-scroll border-0 border-b-2 border-[#e6e6e6] "></textarea>
+            </form>
+            <button
+              class="py-[12px] px-[30px] bg-[#91C33F] text-white border rounded-[2px] outline-none mt-[8%] lg:ml-[18%] text-[16px] font-bold hover:bg-[#8A8B8A]">
+              Submit</button>
+          </div>
+          <div class=" flex flex-col gap-y-[15px] py-[40px] lg:ml-[10%] text-[#525252] px-[20px]">
+            <h2 class="font-extrabold text-[22px] w-[100%]">Jeddah, Saudi Arabia Office</h2>
+            <p class="lg:pl-[23px] text-[16px] w-[100%] lg:w-[388px]">Saudi business center Al-Madinah Al-Munawarah Rd
+              Jeddah</p>
+            <div class="flex gap-x-3 items-center  outline-none border-0 border-b-2 pb-[25px] border-[#e6e6e6] ">
+              <i class="fa fa-paper-plane text-[#91C33F]"></i>
+              <a href="mailto:support@wayzco.com">
+                <span class="text-[16px]">
+                  Email:support@wayzco.com</span>
+              </a>
+            </div>
+            <div class="flex gap-x-[14px] pt-[15px] text-[16px] items-center ">
+              <a href="https://www.facebook.com/wayz.sa.7"> <i
+                  class="fa-brands fa-facebook-f border-2 border-[#e6e6e6] rounded-full py-[8px] w-[35px] h-[35px] text-center hover:text-white hover:bg-[#91C33F] cursor-pointer"></i></a>
+              <a href="https://www.instagram.com/wayzsa/"> <i
+                  class="fa-brands fa-instagram border-2 border-[#e6e6e6] rounded-full py-[8px] w-[35px] h-[35px] text-center hover:text-white  hover:bg-[#91C33F] cursor-pointer"></i></a>
+              <a href="https://twitter.com/wayzsa1"> <i
+                  class="fa-brands fa-twitter border-2 border-[#e6e6e6] rounded-full py-[8px] w-[35px] h-[35px] text-center hover:text-white  hover:bg-[#91C33F] cursor-pointer"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- section end -->
+    <!-- map start -->
+    <section>
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+            href="https://mcpenation.com/">MCPE Nation</a></div>
+      </div>
+    </section>
+    <!-- map end -->
+  </main>
+  <footer class="bg-[#525252]">
+    <div class="max-w-[1300px] m-auto px-[20px] 2xl:p-0">
+      <div
+        class="flex justify-between flex-wrap flex-col md:flex-row w-full mx-auto pb-[20px] gap-y-[20px] md:gap-y-0 gap-x-[2%] pt-[50px] md:pt-[80px]">
+        <div class="w-full md:max-w-[200px] md:min-w-[290px]">
+          <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70p x] w-[50%] max-w-[170px]">
+          <p class="text-white  text-[13px] mt-[15px] md:mt-[20px]">The first Saudi based
+            company in its
+            segment focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility
+            Driven by
+            a fun approach with a commitment in developing alternative solutions and in sync with vision
+            2030.
+          </p>
+        </div>
+        <div class="text-white min-w-[100px]">
+          <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Help Links</h2>
+        </div>
+        <div class="w-full md:w-[24%] text-white">
+          <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Get In touch</h2>
+          <p class="mb-[5px] md:mb-[10px] text-[13px]"> Saudi business center Al-Madinah Al-Munawarah Rd
+            Jeddah
+          </p>
+          <p class="mb-[5px] md:mb-[10px] text-[13px]"><a href="mailto:support@wayzco.com">support@mayzo.com</a></p>
+          <p class="mb-[5px] md:mb-[10px] text-[13px]"><a href="faq.html">FAQs</a></p>
+          <p class="mb-[5px] md:mb-[10px] text-[13px]"><a href="terms-and-conditions.html">Terms &
+              conditions</a></p>
+        </div>
+        <div class="w-full md:w-[26%] text-[25px] text-white">
+          <h3 class="text-[20px]">Subscribe Newsletter</h3>
+          <div class="relative">
+            <input type="text" placeholder="Enter Your Email Address"
+              class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-full md:min-w-[320px ] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+            <i class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+          </div>
+          <div class="flex justify-start items-center gap-[10px] py-4">
+            <div
+              class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+              <a href="https://www.facebook.com/wayz.sa.7"><i
+                  class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i></a>
+            </div>
+            <div
+              class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+              <a href="https://www.instagram.com/wayzsa/"><i
+                  class="fa-brands fa-instagram text-[18px] text-[#fff]"></i></a>
+            </div>
+            <div
+              class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+              <a href="https://twitter.com/wayzsa1"><i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-[#D2DB36]">
+      <div class="max-w-[1140px] m-auto px-[20px] 2xl:p-0">
+        <div class="w-full h-[36px]  flex justify-center items-center">
+          <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

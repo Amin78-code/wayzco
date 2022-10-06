@@ -1,0 +1,73 @@
+.slick-dots li.slick-active button:before {
+  color: #91c33f;
+}
+.slick-dots li button:before {
+  font-size: 10px;
+}
+.slick-dots li {
+  color: black;
+}
+.anim {
+  background-color: #92b654;
+  animation: anim 1s forwards;
+  animation-delay: 0.7s;
+}
+@keyframes anim {
+  0% {
+    background-color: #92b654;
+  }
+  40% {
+    background-color: #92b654;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.main-heading-anim {
+  transform: scale(0.4);
+  opacity: 0;
+  animation: main-heading-anim 0.8s forwards;
+  animation-delay: 2s;
+}
+@keyframes main-heading-anim {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.apps {
+  transform: scale(1.6);
+  opacity: 0;
+  animation: apps 0.8s forwards;
+  animation-delay: 2s;
+}
+@keyframes apps {
+  0% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.download-text {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: download-text 0.6s forwards;
+  animation-delay: 2.7s;
+}
+@keyframes download-text {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
