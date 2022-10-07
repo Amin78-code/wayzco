@@ -1,0 +1,547 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    </link>
+    <link rel="stylesheet" href="../assets/css/our-services-style.css">
+    <title>Our Services - Wayzco.com</title>
+</head>
+
+<body dir="rtl">
+    <header id="header">
+        <!-- top header start -->
+        <div class="bg-[#525252] hidden md:block">
+            <div class="max-w-[1140px] h-[35px] m-auto px-[20px] py-1">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="mailto:support@wayzco.com">
+                            <i
+                                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                                class="text-[16px]  mr-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+                        </a>
+                    </div>
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <a href="https://www.facebook.com/wayz.sa.7"> <i
+                                class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://www.instagram.com/wayzsa/"> <i
+                                class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://twitter.com/wayzsa1"> <i
+                                class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top header end -->
+        <!-- main navigation start -->
+        <div class="bg-[#F9F9F9] sm:bg-[#fff] border-b-[1px] border-[#ddd]">
+            <div class="max-w-[1140px] h-[60px] sm:h-[80px] m-auto px-[20px] py-[16px] sm:p-[22px]">
+                <div class="flex justify-between items-center">
+                    <div class="image flex justify-center items-center gap-x-[10px] sm:gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[22px] text-[#939598] cursor-pointer block sm:hidden"
+                            onclick="openMobileMenu()"></i>
+                        <a href="/">
+                            <img src="../assets/images/logo/logo.svg" width="150px" height="36px"
+                                class="h-[28px] sm:h-[auto]" alt="logo-img" />
+                        </a>
+                    </div>
+                    <div class="hidden sm:block menu-options-div">
+                        <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+                            <li class="hover:text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="index.html">Home</a></li>
+                            <li class="hover:text-[#91C33F] text-[#91C33F]">
+                                <a class="block sm:unset py-[10px] text-[#91C33F] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="our-services.html">Our Service</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="faq.html">FAQs</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="contact.html">Contact</a></li>
+                            <li class="hover:text-[#91C33F] cursor-pointer"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="../our-services.html">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="  gap-x-3 justify-center sm:justify-start social-links-div">
+                        <a href="https://play.google.com/store/apps/details?id=com.wayz.android">
+                            <img src="../assets/images/google-store/play-store.png" width="150px"
+                                alt="google-play-image" />
+                        </a>
+                        <a href="https://apps.apple.com/sa/app/wayz-goes-every-wayz/id1569831891">
+                            <img src="../assets/images/google-store/apple-store.png" width="150px"
+                                alt="app-store-image" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main navigation end -->
+        <!-- mobile menu start -->
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-whi te z-[5]  hide">
+            <div id=" " class=" w-full h-full bg-[#fff] w-[80%] flex flex-col justify-between hide-inner">
+                <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileMenu()"></i>
+                <ul class="py-[70px] text-[22px] text-[#333333]">
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px] text-[#fff]
+                        bg-[#91C33F]" href="our-services.html">Our Service</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="faq.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="../our-services.html">English</a>
+                    </li>
+                </ul>
+                <div
+                    class="h-[70px] border-t-[1px] border-[#ccc] flex justify-between items-center gap-x-[20px] px-[20px]">
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <a href="https://www.facebook.com/wayz.sa.7"><i
+                                class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://www.instagram.com/wayzsa/"> <i
+                                class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://twitter.com/wayzsa1"> <i
+                                class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                    </div>
+                    <div class="flex justify-between items-center gap-x-[10px]">
+                        <i class="fa-solid fa-magnifying-glass" onclick="openMobileSearchMenu()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+        <!-- mobile search menu start -->
+        <div id="mobile_search_box"
+            class="fixed top-0 h-0 w-full h-full flex justify-center items-center z-[5] hide-from-top">
+            <div id=""
+                class="w-full h-[97.7%] bg-[#fff] w-[96%] flex flex-col justify-between hide-from-top-inner px-[30px] py-[70px]">
+                <i class="fa-solid fa-xmark absolute right-[34px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileSearchMenu()"></i>
+
+                <div class="text-right">
+                    <label class="text-gray-400">What are you looking for?</label>
+                    <div class="relative  ">
+                        <input id="text_to_search"
+                            class="w-full border py-[10px] font-normal text-[30px] leading-4 text-gray-600 placeholder-gray-400 italic border-0 border-b-[1px] border-[#ddd] outline-none pr-[70px]"
+                            type="text" placeholder="Start Typing..." oninput="changeHandler(event)" />
+                        <div id="clear_text"
+                            class="absolute right-0 top-[22px]  justify-end items-center gap-x-[4px] text-[#CED2D9] hide-it"
+                            onclick="removeText()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Clear</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <h5 class="text-[20px] font-bold py-[20px] text-gray-300">No results found</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile search menu end -->
+    </header>
+    <main class="what-we-do h-[auto] ">
+        <!-- What We Do start -->
+        <section class="bg-[#F9F9F9]">
+            <!-- container -->
+            <div class="max-w-[1140px] m-auto p-1">
+                <div class="text-center h-[190px] pt-[60px]">
+                    <h1 class="text-[#525252] text-[40px] font-bold">What We Do?</h1>
+                    <h2
+                        class="text-[#666666] text-[24px] md:text-[30px] leading-[28px] md:leading-[35px] max-w-[92%] mx-auto">
+                        In A Nutshell, We Are A Company Focused On</h2>
+                </div>
+                <div
+                    class="flex justify-center flex-col sm:flex-row gap-y-[70px] text-center sm:text-left pt-[60px] sm:pt-[30px] pb-[85px]">
+                    <div class="w-full md:max-w-[267px] px-[20px]">
+                        <h5 class="text-[18px] font-bold text-center text-[#525268]"> ECO Friendly</h5>
+                        <div class="h-[230px] flex justify-center items-center">
+                            <svg class="c-team__svg" xmlns="https://www.w3.org/2000/svg" id="Layer_2_copy_3"
+                                data-name="Layer 2 copy 3" viewBox="0 0 64 64" width="512" height="512">
+                                <path fill="#91C33F"
+                                    d="M28.66,51.06A1,1,0,0,0,29,53a1,1,0,0,0,.33-.06,5.82,5.82,0,0,0,3.53-4A11,11,0,0,0,43,38c0-5.77-9.76-20-10.18-20.57h0a1,1,0,0,0-.12-.13l-.1-.1-.12-.07-.15-.08h0l-.13,0L32,17l-.16,0-.14,0h0l-.14.07-.14.07-.09.09a1,1,0,0,0-.13.13h0s-1.48,2.15-3.27,5a1,1,0,0,0,1.7,1.05c.5-.81,1-1.55,1.39-2.21V33l-2.4-1.8a1,1,0,0,0-1.2,1.6L31,35.5v4.42l-3.38-2.7a1,1,0,0,0-1.25,1.56L31,42.48v4.46A9,9,0,0,1,23,38c0-1.35.74-4.27,4.26-10.51a1,1,0,0,0-1.74-1C22.52,31.82,21,35.69,21,38a11,11,0,0,0,9.79,10.93A3.9,3.9,0,0,1,28.66,51.06ZM33,46.94V42.48l4.62-3.7a1,1,0,0,0-1.25-1.56L33,39.92V35.5l3.6-2.7a1,1,0,0,0-1.2-1.6L33,33V21.31c3.22,5,8,13.18,8,16.69A9,9,0,0,1,33,46.94Z">
+                                </path>
+                                <path fill="#91C33F"
+                                    d="M44.37,9.07a1,1,0,0,0-1.3.56l-1.23,3.08L36.71,3.52a5.37,5.37,0,0,0-9.42,0l-6.7,12a1,1,0,1,0,1.75,1l6.7-12a3.37,3.37,0,0,1,5.92,0l5.12,9.18L36.16,13a1,1,0,0,0-.33,2l6,1h.27a1,1,0,0,0,.82-.61l2-5A1,1,0,0,0,44.37,9.07Z">
+                                </path>
+                                <path fill="#91C33F"
+                                    d="M.89,57.29a5.32,5.32,0,0,0,4.61,2.62H19a1,1,0,0,0,0-2H5.51a3.37,3.37,0,0,1-3-5L9.74,40l1.33,3.32a1,1,0,1,0,1.86-.74l-2-5A1,1,0,0,0,9.88,37a1,1,0,0,0-.52.08L3.84,38a1,1,0,0,0,.33,2l3.66-.61L.79,52A5.32,5.32,0,0,0,.89,57.29Z">
+                                </path>
+                                <path fill="#91C33F"
+                                    d="M47.62,53.22a1,1,0,0,0-1.41.16l-4,5a1,1,0,0,0,.07,1.33l4,4a1,1,0,0,0,1.41-1.41l-2.38-2.38H58.49A5.37,5.37,0,0,0,63.2,52l-6.4-11.46a1,1,0,0,0-1.75,1l6.39,11.45a3.37,3.37,0,0,1-3,5H45.15l2.63-3.29A1,1,0,0,0,47.62,53.22Z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <p class="text-[14px] opacity-[0.7] max-w-[320px] sm:max-w-full mx-auto">
+                            Rising awareness towards the longevity Of ECO-friendly self-mobility. Implementing
+                            alternative
+                            methods promoting both Healthy solution for short distance transportation.
+                        </p>
+                    </div>
+                    <div class="w-full md:max-w-[267px] px-[20px]">
+                        <h5 class="text-[18px] font-bold text-center text-[#525268]"> Conveniency</h5>
+                        <div class="h-[230px] flex justify-center items-center">
+                            <svg class="c-team__svg" id="Layer_5" enable-background="new 0 0 64 64" height="512"
+                                viewBox="0 0 64 64" width="512" xmlns="https://www.w3.org/2000/svg">
+                                <path fill="#cadb2a"
+                                    d="m6 39h12c2.757 0 5-2.243 5-5v-28c0-2.757-2.243-5-5-5h-12c-2.757 0-5 2.243-5 5v28c0 2.757 2.243 5 5 5zm12-2h-12c-1.654 0-3-1.346-3-3v-3h18v3c0 1.654-1.346 3-3 3zm-15-8v-18h18v18zm3-26h12c1.654 0 3 1.346 3 3v3h-18v-3c0-1.654 1.346-3 3-3z">
+                                </path>
+                                <path fill="#cadb2a" d="m15 5h2v2h-2z"></path>
+                                <path fill="#cadb2a" d="m7 5h2v2h-2z"></path>
+                                <path fill="#cadb2a" d="m11 5h2v2h-2z"></path>
+                                <path fill="#cadb2a" d="m8 33h8v2h-8z"></path>
+                                <path fill="#cadb2a"
+                                    d="m12 21c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z">
+                                </path>
+                                <path fill="#cadb2a"
+                                    d="m7.051 19.05 1.414 1.414c.944-.944 2.2-1.464 3.535-1.464s2.591.52 3.535 1.464l1.414-1.414c-1.322-1.322-3.079-2.05-4.949-2.05s-3.627.728-4.949 2.05z">
+                                </path>
+                                <path fill="#cadb2a"
+                                    d="m4.222 16.222 1.414 1.414c3.51-3.509 9.219-3.509 12.729 0l1.414-1.414c-4.29-4.289-11.268-4.289-15.557 0z">
+                                </path>
+                                <path fill="#cadb2a"
+                                    d="m54.816 16h5.184c1.654 0 3-1.346 3-3s-1.346-3-3-3h-5.184c-.414-1.161-1.514-2-2.816-2h-6c-1.302 0-2.402.839-2.816 2h-5.184c-1.654 0-3 1.346-3 3s1.346 3 3 3h5.184c.302.847.969 1.514 1.816 1.816v25.876c-3.448 1.221-6.107 3.952-7.303 7.309h-13.388c-1.68-4.745-6.22-8-11.309-8-6.617-.001-12 5.382-12 11.999h2c0-5.514 4.486-10 10-10 3.998 0 7.588 2.412 9.16 6h-2.254c-1.421-2.442-4.054-4-6.906-4-4.411 0-8 3.589-8 8s3.589 8 8 8c2.852 0 5.485-1.558 6.906-4h19.094v-4c0-3.997 2.412-7.587 6-9.159v2.253c-2.442 1.421-4 4.054-4 6.906 0 4.411 3.589 8 8 8s8-3.589 8-8c0-2.852-1.558-5.485-4-6.906v-2.254c3.588 1.572 6 5.162 6 9.16h2c0-5.089-3.255-9.63-8-11.309v-25.875c.847-.302 1.514-.969 1.816-1.816zm-41.816 45c-3.309 0-6-2.691-6-6s2.691-6 6-6c1.721 0 3.343.752 4.467 2h-4.467c-2.206 0-4 1.794-4 4s1.794 4 4 4h4.467c-1.124 1.248-2.746 2-4.467 2zm2-6c0 1.103-.897 2-2 2s-2-.897-2-2 .897-2 2-2 2 .897 2 2zm22 2h-20.556c.344-.591.556-1.268.556-2s-.212-1.409-.556-2h20.726c-.111.654-.17 1.322-.17 2zm14-5.444c-.591-.344-1.268-.556-2-.556s-1.409.212-2 .556v-33.556h4zm0 3.444c0 1.103-.897 2-2 2s-2-.897-2-2 .897-2 2-2 2 .897 2 2zm10-42c0 .551-.448 1-1 1h-5v-2h5c.552 0 1 .449 1 1zm-16-2c0-.551.448-1 1-1h6c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-6c-.552 0-1-.449-1-1zm-8 2c0-.551.448-1 1-1h5v2h-5c-.552 0-1-.449-1-1zm18 42c0 3.309-2.691 6-6 6s-6-2.691-6-6c0-1.721.752-3.343 2-4.467v4.467c0 2.206 1.794 4 4 4s4-1.794 4-4v-4.467c1.248 1.124 2 2.746 2 4.467z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <p class="text-[14px] opacity-[0.7] max-w-[320px] sm:max-w-full mx-auto">
+                            Our service encourages easy environmentally solutions and convenient means to travel around
+                            small communities and distances
+                        </p>
+                    </div>
+                    <div class="w-full md:max-w-[267px] px-[20px]">
+                        <h5 class="text-[18px] font-bold text-center text-[#525268]">Fun & Safety</h5>
+                        <div class="h-[230px] flex justify-center items-center">
+                            <svg class="c-team__svg" version="1.1" id="Capa_1" xmlns="https://www.w3.org/2000/svg"
+                                xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M123.17,185.756c-9.515-7.433-23.304-5.74-30.738,3.774c-2.55,3.264-1.971,7.977,1.292,10.528        c1.371,1.071,2.998,1.59,4.612,1.59c2.229,0,4.436-0.99,5.915-2.883c2.343-2.998,6.687-3.53,9.683-1.189        c3.264,2.55,7.977,1.971,10.527-1.293C127.013,193.019,126.434,188.306,123.17,185.756z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M200.163,176.303c-9.516-7.434-23.305-5.741-30.738,3.774c-2.55,3.264-1.972,7.977,1.292,10.528        c1.371,1.071,2.998,1.59,4.612,1.59c2.229,0,4.436-0.99,5.915-2.883c2.342-2.998,6.685-3.532,9.683-1.189        c3.264,2.55,7.977,1.971,10.528-1.292C204.005,183.567,203.426,178.854,200.163,176.303z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M191.497,233.955l-0.855-6.97c-0.37-3.015-1.892-5.705-4.286-7.576c-2.394-1.87-5.372-2.693-8.386-2.326l-43.071,5.288        c-3.015,0.37-5.705,1.892-7.575,4.286c-1.871,2.394-2.696,5.372-2.326,8.386l0.856,6.972        c2.223,18.101,18.753,31.013,36.852,28.792C180.804,268.585,193.72,252.053,191.497,233.955z M160.878,255.918        c-9.878,1.222-18.921-5.843-20.135-15.732l-0.414-3.369l35.867-4.403l0.414,3.369        C177.824,245.672,170.767,254.704,160.878,255.918z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M245.693,34.573C238.332,18.8,225.806,7.029,209.469,0.532c-3.59-1.427-7.677,0.105-9.442,3.541        c-8.069,15.704-27.562,26.881-52.142,29.899l-43.37,5.325c-4.111,0.504-7.035,4.247-6.53,8.358        c0.504,4.112,4.251,7.034,8.358,6.53l43.37-5.325c26.391-3.241,48.21-14.921,59.927-31.745        c24.445,13.052,30.377,40.412,27.727,60.982c-2.755,21.382-13.997,37.459-27.337,39.097L64.101,135.113        c-12.112,1.487-20.756,12.552-19.269,24.664l1.793,14.604l-11.366,1.396l-11.393-92.79c-0.604-4.914,0.743-9.769,3.79-13.67        c3.048-3.901,7.433-6.382,12.347-6.985l36.401-4.469c4.111-0.505,7.035-4.247,6.53-8.358s-4.249-7.031-8.358-6.53l-36.401,4.47        C19.822,49.697,6.724,66.461,8.978,84.814l11.776,95.912c-7.605,5.423-11.875,14.697-10.695,24.268        c1.598,12.977,12.648,22.763,25.703,22.763c1.016,0,2.076-0.064,3.186-0.196l13.995-1.724l1.374,11.174        c2.875,23.418,14.698,44.315,33.289,58.841c15.686,12.257,34.605,18.74,54.199,18.74c3.629,0,7.283-0.223,10.941-0.672        c11.3-1.39,22.033-4.858,31.897-10.307c9.553-5.27,17.958-12.19,24.983-20.567c2.662-3.174,2.247-7.904-0.927-10.566        c-3.174-2.662-7.904-2.246-10.566,0.927c-5.832,6.954-12.809,12.699-20.739,17.074c-8.182,4.519-17.09,7.396-26.477,8.551        c-19.437,2.387-38.642-2.94-54.075-14.999c-15.434-12.06-25.249-29.408-27.636-48.851l-2.29-18.62        c-0.243-1.974-1.26-3.771-2.828-4.996c-1.568-1.225-3.556-1.777-5.532-1.533l-21.405,2.637c-0.492,0.059-0.959,0.088-1.389,0.088
+                                        c-5.493,0-10.142-4.125-10.816-9.597c-0.602-4.882,2.152-9.585,6.696-11.437c0.008-0.003,0.015-0.008,0.023-0.011
+                                        c0.881-0.362,1.82-0.607,2.789-0.726l21.442-2.633c4.111-0.504,7.035-4.247,6.53-8.358l-2.707-22.049
+                                        c-0.479-3.903,2.307-7.469,6.209-7.948l138.481-17.003l10.356,84.318c1.356,11.008,0.258,21.883-3.263,32.326
+                                        c-1.323,3.925,0.785,8.18,4.71,9.503c0.795,0.268,1.603,0.395,2.397,0.395c3.13,0,6.05-1.975,7.106-5.105
+                                        c4.246-12.59,5.57-25.696,3.937-38.95l-10.458-85.146c16.93-6.03,29.814-25.211,33.05-50.322
+                                        C254.289,64.144,251.963,48.006,245.693,34.573z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M419.566,386.938c-7.433-9.515-21.223-11.208-30.738-3.774c-3.264,2.55-3.843,7.264-1.292,10.528
+                                        c2.55,3.264,7.263,3.843,10.528,1.292c2.997-2.343,7.341-1.808,9.683,1.189c1.479,1.893,3.686,2.883,5.915,2.883
+                                        c1.615,0,3.241-0.52,4.612-1.591C421.538,394.915,422.116,390.202,419.566,386.938z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M342.574,377.485c-7.433-9.514-21.222-11.209-30.737-3.774c-3.264,2.55-3.843,7.263-1.293,10.527
+                                        c2.549,3.263,7.262,3.844,10.527,1.293c2.997-2.341,7.341-1.809,9.684,1.189c1.479,1.893,3.685,2.883,5.915,2.883
+                                        c1.615,0,3.241-0.52,4.612-1.59C344.546,385.463,345.124,380.749,342.574,377.485z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f"
+                                            d="M377.101,419.78l-43.073-5.289c-3.013-0.367-5.993,0.457-8.385,2.326c-5.386,4.207-4.128,9.869-5.141,14.546
+                                        c-3.607,29.372,30.215,48.029,53.18,30.088c13.802-10.783,12.416-25.654,13.319-28.999
+                                        C387.765,426.23,383.325,420.545,377.101,419.78z M364.447,449.631c-3.803,2.971-8.535,4.283-13.326,3.696
+                                        c-9.911-1.216-16.948-10.222-15.732-20.135l0.414-3.37l35.867,4.404C371.233,435.816,371.895,443.812,364.447,449.631z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M496.162,257.489c-5.515-7.058-13.448-11.547-22.339-12.638l-103.057-12.654c-3.847-0.472-7.364-2.563-9.651-5.736
+                                        c-7.136-9.903-16.841-17.584-28.065-22.214c-3.83-1.579-8.214,0.245-9.793,4.074c-1.579,3.83,0.245,8.214,4.074,9.793
+                                        c8.64,3.563,16.114,9.482,21.615,17.116c4.723,6.554,12.01,10.875,19.992,11.855l103.057,12.654
+                                        c10.144,1.246,17.384,10.512,16.137,20.655l-11.392,92.79l-11.367-1.396l1.793-14.605c1.486-12.112-7.158-23.176-19.27-24.663
+                                        l-145.929-17.918c-13.711-1.684-25.83-8.697-34.125-19.749c-8.29-11.045-11.634-24.657-9.415-38.33
+                                        c3.567-21.983,21.553-39.199,43.738-41.866c4.112-0.494,7.046-4.228,6.551-8.341c-0.494-4.112-4.231-7.049-8.341-6.551
+                                        c-28.784,3.459-52.123,25.812-56.755,54.356c-2.877,17.736,1.464,35.399,12.225,49.737c9.249,12.322,22.167,20.762,36.907,24.286
+                                        l-10.409,84.746c-1.387,11.287-0.618,22.546,2.286,33.462c0.893,3.357,3.926,5.574,7.243,5.574c0.638,0,1.287-0.082,1.933-0.254
+                                        c4.003-1.065,6.385-5.173,5.32-9.176c-2.409-9.056-3.046-18.401-1.894-27.778l10.355-84.314l138.481,17.003
+                                        c3.903,0.479,6.689,4.045,6.21,7.948l-2.708,22.049c-0.242,1.974,0.31,3.964,1.534,5.532c1.225,1.567,3.022,2.584,4.996,2.826
+                                        l21.442,2.633c0.912,0.112,1.794,0.345,2.631,0.673c4.667,1.797,7.492,6.502,6.878,11.501c-0.673,5.471-5.323,9.596-10.816,9.596
+                                        c-0.429,0-0.895-0.029-1.354-0.084l-21.44-2.64c-1.975-0.244-3.965,0.309-5.533,1.533s-2.585,3.021-2.828,4.996l-2.29,18.621
+                                        c-2.387,19.442-12.202,36.79-27.636,48.85C399.72,493.5,380.52,498.83,361.076,496.44c-10.201-1.25-19.817-4.533-28.581-9.758
+                                        c-8.475-5.052-15.741-11.656-21.595-19.627c-2.452-3.339-7.146-4.056-10.484-1.605c-3.338,2.452-4.057,7.146-1.605,10.484
+                                        c7.048,9.596,15.797,17.547,26.005,23.632c10.567,6.3,22.154,10.258,34.436,11.762c3.66,0.45,7.31,0.672,10.94,0.672
+                                        c19.592,0,38.514-6.484,54.199-18.74c18.591-14.527,30.413-35.424,33.288-58.84l1.374-11.175
+                                        c13.388,1.59,14.43,1.919,17.182,1.919c13.055,0,24.106-9.786,25.704-22.766c1.187-9.678-3.063-18.898-10.692-24.292
+                                        l11.772-95.885C504.113,273.331,501.677,264.548,496.162,257.489z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M389.982,62.914c-4.142,0-7.5,3.358-7.5,7.5v18.359c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5V70.414
+                                        C397.482,66.272,394.124,62.914,389.982,62.914z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M389.982,119.35c-4.142,0-7.5,3.358-7.5,7.5v18.359c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5V126.85
+                                        C397.482,122.708,394.124,119.35,389.982,119.35z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M427.38,100.312h-18.359c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h18.359c4.142,0,7.5-3.358,7.5-7.5
+                                        C434.88,103.67,431.522,100.312,427.38,100.312z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M370.944,100.312h-18.359c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h18.359c4.142,0,7.5-3.358,7.5-7.5
+                                        C378.444,103.67,375.086,100.312,370.944,100.312z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M122.017,359.286c-4.142,0-7.5,3.358-7.5,7.5v18.359c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5v-18.359
+                                        C129.517,362.644,126.159,359.286,122.017,359.286z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M122.017,415.723c-4.142,0-7.5,3.358-7.5,7.5v18.359c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5v-18.359
+                                        C129.517,419.08,126.159,415.723,122.017,415.723z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M159.414,396.684h-18.359c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h18.359c4.142,0,7.5-3.358,7.5-7.5
+                                        C166.914,400.042,163.557,396.684,159.414,396.684z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path fill="#f8ed2f" d="M102.978,396.684H84.62c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h18.359c4.142,0,7.5-3.358,7.5-7.5
+                                        C110.479,400.042,107.12,396.684,102.978,396.684z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <p class="text-[14px] opacity-[0.7] max-w-[320px] sm:max-w-full mx-auto">
+                            We provide a fun and safe experience using our solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What We Do end -->
+        <!-- billion ways section start -->
+        <section class="bg-[#fff] h-[320px] md:h-[500px] relative">
+            <div class="h-[200px] md:h-[225px] flex justify-center items-center">
+                <h2
+                    class="max-w-[80%] md:max-w-[900px] text-[28px] md:text-[39px] font-bold text-center text-[#525252] leading-[40px] md:leading-[50px]">
+                    A Billion Ways To Go <span class="text-[#91C33F]">Green</span> WAYZ Is Just One Fun Way To Do It
+                </h2>
+            </div>
+            <img src="../assets/images/bg/buildings.png" class="w-full absolute bottom-0" />
+        </section>
+        <!-- billion ways section end -->
+        <!-- make sure section start -->
+        <section class="bg-[#F9F9F9] pt-[60px] sm:pt-[80px] pb-[30px] md:pb-[50px]">
+            <div class="h-[225px] ">
+                <div class="flex justify-center items-center flex-col ">
+                    <img src="../assets/images/icon/logo-icon.png" class=" " />
+                    <h2
+                        class="max-w-[80%] md:max-w-[900px] text-[28px] md:text-[39px] font-bold text-center text-[#525252] mt-[20px] leading-[40px] md:leading-[50px]">
+                        Make sure you’re using WAYZ the right way
+                    </h2>
+                </div>
+            </div>
+            <div class="max-w-[1140px] m-auto p-1">
+                <div class="flex flex-col md:flex-row justify-center gap-y-[50px]">
+                    <div class="w-[60%] md:w-[500px] mx-auto">
+                        <img src="../assets/images/cycle.svg" class="" />
+                    </div>
+                    <div class="text-[#525252] pr-[40px] w-full">
+                        <div class="pb-[40px] relative pr-[40px] md:pr-[50px] pl-[15px]">
+                            <i
+                                class="fa-solid fa-chevron-right absolute right-[-5px] text-[38px] text-[#91C33F] rotate-[180deg]"></i>
+                            <h5 class="text-[18px] font-bold pb-[5px]">Be aware of your surroundings</h5>
+                            <p class="text-[16px]">
+                                Keep note of where you’re riding -- avoid other vehicles and pedestrians. Riding a
+                                scooter or bike makes you more vulnerable to accidents so it is crucial you have your
+                                eyes and ears open. However, don’t forget to get some fresh air and enjoy your ride!
+                            </p>
+                        </div>
+                        <div class="pb-[40px] relative pr-[40px] md:pr-[50px] pl-[15px]">
+                            <i
+                                class="fa-solid fa-chevron-right absolute right-[-5px] text-[38px] text-[#C6D634] rotate-[180deg]"></i>
+                            <h5 class="text-[18px] font-bold pb-[5px]">Follow the laws of traffic</h5>
+                            <p class="text-[16px]">
+                                Whether you’re riding on two wheels or four, traffic rules apply to all.
+                            </p>
+                            <ul class="mt-[10px] pl-[40px]">
+                                <li class="list-disc">Keep your license with you. Use a helmet.</li>
+                                <li class="list-disc">Never text or call while riding.</li>
+                                <li class="list-disc">Follow traffic lights, street</li>
+                                <li class="list-disc"> signs and stop signs.</li>
+                            </ul>
+                        </div>
+                        <div class="pb-[40px] relative pr-[40px] md:pr-[50px] pl-[15px]">
+                            <i
+                                class="fa-solid fa-chevron-right absolute right-[-5px] text-[38px] text-[#F6EB3D] rotate-[180deg]"></i>
+                            <h5 class="text-[18px] font-bold pb-[5px]">Park carefully and responsibly</h5>
+                            <p class="text-[16px]">
+                                Safety should be exercised after a ride ends as well. Park your WAYZ scooter or bike
+                                away from the public. Avoid walkways, driveways and access ramps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- make sure section end -->
+        </div>
+    </main>
+    <footer class="bg-[#525252]">
+        <div class="max-w-[1300px] m-auto px-[20px] 2xl:p-0">
+            <div
+                class="flex justify-between flex-wrap flex-col md:flex-row w-full mx-auto pb-[20px] gap-y-[20px] md:gap-y-0 gap-x-[2%] pt-[50px] md:pt-[80px]">
+                <div class="w-full md:max-w-[200px] md:min-w-[290px]">
+                    <img src="../assets/images/logo/logo.svg" alt="" class="mt-[70p x] w-[50%] max-w-[170px]">
+                    <p class="text-white  text-[13px] mt-[15px] md:mt-[20px]">The first Saudi based
+                        company in its
+                        segment focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility
+                        Driven by
+                        a fun approach with a commitment in developing alternative solutions and in sync with vision
+                        2030.
+                    </p>
+                </div>
+                <div class="text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Help Links</h2>
+                </div>
+                <div class="w-full md:w-[24%] text-white">
+                    <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Get In touch</h2>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"> Saudi business center Al-Madinah Al-Munawarah Rd
+                        Jeddah
+                    </p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a
+                            href="mailto:support@wayzco.com">support@mayzo.com</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a
+                            class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="faq.html">FAQs</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a href="terms-and-conditions.html">Terms &
+                            conditions</a></p>
+                </div>
+                <div class="w-full md:w-[26%] text-[25px] text-white">
+                    <h3 class="text-[20px]">Subscribe Newsletter</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Enter Your Email Address"
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-full md:min-w-[320px ] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                        <i
+                            class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+                    </div>
+                    <div class="flex justify-start items-center gap-[10px] py-4">
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://www.facebook.com/wayz.sa.7"><i
+                                    class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i></a>
+                        </div>
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://www.instagram.com/wayzsa/"><i
+                                    class="fa-brands fa-instagram text-[18px] text-[#fff]"></i></a>
+                        </div>
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://twitter.com/wayzsa1"><i
+                                    class="fa-brands fa-twitter text-[18px] text-[#fff]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#D2DB36]">
+            <div class="max-w-[1140px] m-auto px-[20px] 2xl:p-0">
+                <div class="w-full h-[36px]  flex justify-center items-center">
+                    <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

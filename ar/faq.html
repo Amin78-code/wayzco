@@ -1,0 +1,943 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>FAQs - Wayzco.com</title>
+</head>
+
+<body dir="rtl">
+    <header id="header">
+        <!-- top header start -->
+        <div class="bg-[#525252] hidden md:block">
+            <div class="max-w-[1140px] h-[35px] m-auto px-[20px] py-1">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="mailto:support@wayzco.com">
+                            <i
+                                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                                class="text-[16px]  mr-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+                        </a>
+                    </div>
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <a href="https://www.facebook.com/wayz.sa.7"> <i
+                                class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://www.instagram.com/wayzsa/"> <i
+                                class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://twitter.com/wayzsa1"> <i
+                                class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top header end -->
+        <!-- main navigation start -->
+        <div class="bg-[#F9F9F9] sm:bg-[#fff] border-b-[1px] border-[#ddd]">
+            <div class="max-w-[1140px] h-[60px] sm:h-[80px] m-auto px-[20px] py-[16px] sm:p-[22px]">
+                <div class="flex justify-between items-center">
+                    <div class="image flex justify-center items-center gap-x-[10px] sm:gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[22px] text-[#939598] cursor-pointer block sm:hidden"
+                            onclick="openMobileMenu()"></i>
+                        <a href="/">
+                            <img src="../assets/images/logo/logo.svg" width="150px" height="36px"
+                                class="h-[28px] sm:h-[auto]" alt="logo-img" />
+                        </a>
+                    </div>
+                    <div class="hidden sm:block menu-options-div">
+                        <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+                            <li class="hover:text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="index.html">Home</a></li>
+                            <li class="hover:text-[#91C33F]">
+                                <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="our-services.html">Our Service</a>
+                            </li>
+                            <li class="hover:text-[#91C33F] text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#91C33F] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="faq.html">FAQs</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="contact.html">Contact</a></li>
+                            <li class="hover:text-[#91C33F] cursor-pointer"><a
+                                    class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                                    href="../faq.html">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="  gap-x-3 justify-center sm:justify-start social-links-div">
+                        <a href="https://play.google.com/store/apps/details?id=com.wayz.android">
+                            <img src="../assets/images/google-store/play-store.png" width="150px"
+                                alt="google-play-image" />
+                        </a>
+                        <a href="https://apps.apple.com/sa/app/wayz-goes-every-wayz/id1569831891">
+                            <img src="../assets/images/google-store/apple-store.png" width="150px"
+                                alt="app-store-image" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main navigation end -->
+        <!-- mobile menu start -->
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-whi te z-[5]  hide">
+            <div id=" " class=" w-full h-full bg-[#fff] w-[80%] flex flex-col justify-between hide-inner">
+                <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileMenu()"></i>
+                <ul class="py-[70px] text-[22px] text-[#333333]">
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="our-services.html">Our Service</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px] text-[#fff]
+                        bg-[#91C33F]" href="faq.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="../faq.html">English</a>
+                    </li>
+                </ul>
+                <div
+                    class="h-[70px] border-t-[1px] border-[#ccc] flex justify-between items-center gap-x-[20px] px-[20px]">
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <a href="https://www.facebook.com/wayz.sa.7"><i
+                                class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://www.instagram.com/wayzsa/"> <i
+                                class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                        <a href="https://twitter.com/wayzsa1"> <i
+                                class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i></a>
+                    </div>
+                    <div class="flex justify-between items-center gap-x-[10px]">
+                        <i class="fa-solid fa-magnifying-glass" onclick="openMobileSearchMenu()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+        <!-- mobile search menu start -->
+        <div id="mobile_search_box"
+            class="fixed top-0 h-0 w-full h-full flex justify-center items-center z-[5] hide-from-top">
+            <div id=""
+                class="w-full h-[97.7%] bg-[#fff] w-[96%] flex flex-col justify-between hide-from-top-inner px-[30px] py-[70px]">
+                <i class="fa-solid fa-xmark absolute right-[34px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileSearchMenu()"></i>
+
+                <div class="text-right">
+                    <label class="text-gray-400">What are you looking for?</label>
+                    <div class="relative  ">
+                        <input id="text_to_search"
+                            class="w-full border py-[10px] font-normal text-[30px] leading-4 text-gray-600 placeholder-gray-400 italic border-0 border-b-[1px] border-[#ddd] outline-none pr-[70px]"
+                            type="text" placeholder="Start Typing..." oninput="changeHandler(event)" />
+                        <div id="clear_text"
+                            class="absolute right-0 top-[22px]  justify-end items-center gap-x-[4px] text-[#CED2D9] hide-it"
+                            onclick="removeText()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Clear</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <h5 class="text-[20px] font-bold py-[20px] text-gray-300">No results found</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile search menu end -->
+    </header>
+    <main class="h-[auto]">
+        <!-- faq section start -->
+        <section>
+            <div class="max-w-[1140px] m-auto p-1">
+                <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-[20px] md:py-[50px] px-4">
+                    <h1
+                        class="text-[grey] lg:text-[50px] text-3xl lg:leading-9 leading-7 font-semibold text-center sm:leading-[60px] text-[30px]">
+                        FAQ
+                    </h1>
+                    <div
+                        class="focus:outline-none focus:ring focus:ring-offset-2 focus:ring-gray-800 w-full h-14 border border-gray-300 md:mt-10 dark:bg-transparent mt-8 flex justify-between items-center md:py-5 md:px-6 py-5 px-4">
+                        <input
+                            class="focus:outline-none w-full font-normal text-lg leading-4 text-gray-600 placeholder-gray-600"
+                            type="text" placeholder="Search" />
+                        <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg1.svg" alt="search" />
+                        <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg1dark.svg"
+                            alt="search" />
+                    </div>
+                    <div class="w-full mt-8">
+                        <div id="user_manual" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                USER MANUAL
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Parking
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_1"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100" id="icon"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_1">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        For your safety and the safety of others, please make sure
+                                        you park in designated areas.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        When using WAYZ, please park your E-scooter or E-bike
+                                        outside of the main pedestrian Walkway and inside wayz
+                                        parking zones only.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Getting the ride started
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_2"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_2">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        To start your scooter ride, place one foot firmly on the
+                                        baseboard and use your other foot to push off against the
+                                        ground a few times. Once you’ve gained some speed, press
+                                        on the throttle near your right thumb to accelerate.
+                                        Familiarize yourself with the throttle and squeeze the
+                                        hand brake to slow down when needed.
+                                    </p>
+                                    <!-- <br />
+                                    <p class="font-normal  text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p> -->
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Unlocking
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_3"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_3">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Once you have located a WAYZ E-scooter or E-bike , unlock
+                                        it by scanning the QR code. If you encounter difficulties
+                                        scanning the QR code, turn on your flashlight while
+                                        scanning.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If the app prompts an error code or “under maintenance”
+                                        message, that E-scooter or E-bike is likely in-use or our
+                                        team is on the way to retrieve it. Please try another
+                                        nearby E-scooter or Ebike..
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                        <div id="pricingAndPayment" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Pricing and Payment
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Ride Charges
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_4"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_4">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        WAYZ charges a rate per minute as you ride for an
+                                        E-scooter or E-bike and then. Rates and promotions may
+                                        vary by city, day of the week, and time of day. Rides may
+                                        also be subject to a minimum charge. Please refer to your
+                                        WAYZ app for exact costs by tapping on an E-scooter or
+                                        E-bike on the map or tapping “Scan to Ride” to see the
+                                        rate.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Paying for the ride
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_5"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_5">
+                                    <h6>Adding a Payment Method</h6>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Upon signing up with WAYZ, add a payment method to your
+                                        account by navigating to your "Wallet" in the app menu.
+                                        You can pay for each ride individually or add funds to
+                                        your Wallet balance, which will be deducted after each
+                                        ride.
+                                    </p>
+                                    <br />
+                                    <h6>Adding to your Wallet Balance</h6>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you wish to add money to your balance, simply tap on
+                                        "Wallet" in the WAYZ app menu, tap "Balance", and select
+                                        the amount you wish to add. This will charge your default
+                                        payment method.
+                                    </p>
+                                    <br />
+                                    <h6>Price was Higher than Expected:</h6>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        WAYZ charges per minute for E-scooter or E-bike.
+                                    </p>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Rates and promotions may vary by city, day of the week,
+                                        and time of day. Rides may also be subject to a minimum
+                                        charge. Please refer to your WAYZ app for exact costs by
+                                        tapping on an E-scooter or E-bike on the map to see the
+                                        rate.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Price was Higher than Expected
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_6"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_6">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        WAYZ charges a fixed rate to unlock an E-scooter or E-bike
+                                        and then charges per minute as you ride. Rates and
+                                        promotions may vary by city, day of the week, and time of
+                                        day. Rides may also be subject to a minimum charge. Please
+                                        refer to your WAYZ app for exact costs by tapping on an
+                                        E-scooter or E-bike on the map to see the rate.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                        <div id="issues" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Issues
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Emergency
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('issues',this)" id="accordion_7"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_7">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you require immediate police or medical attention,
+                                        please call your local emergency number once you and all
+                                        involved parties are out of harm’s way, and the necessary
+                                        authorities have been contacted, please email
+                                        support@wayzco.com to reach out for WAYZ representative.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            E-scooter or E-bike Issues
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('issues',this)" id="accordion_8"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_8">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you encounter any issues with a WAYZ E-scooter or
+                                        E-bike that could affect your safety or ability to
+                                        complete your ride, please stop riding it immediately, end
+                                        your trip.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Trouble Locating E-scooter or E-bike
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('issues',this)" id="accordion_9"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_9">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you are unable to locate an E-scooter or E-bike that
+                                        appears on the map, you can try the following:
+                                    </p>
+                                    <br />
+                                    <ul class="list-disc">
+                                        <li class="my-[15px] md:my-0">Tap the E-scooter or E-bike on the map.</li>
+                                        <li class="my-[15px] md:my-0">
+                                            Tap “Ring” (or any other option that is available on
+                                            ways) for the E-scooter or E-bike to emit a sound and
+                                            ensure you are in an area with good reception. Search
+                                            all open public spaces and check behind other
+                                            E-scooter(s) or E-bike(s) and large structures. Please
+                                            note that bad phone reception may interfere with
+                                            locating an E-scooter or E-bike .
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        If you still cannot find the E-scooter or E-bike , submit
+                                        a request to let us know.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Trouble Unlocking an E-scooter or E-bike
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('issues',this)" id="accordion_10"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_10">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Once you have located a WAYZ on the map, unlock the
+                                        E-scooter or E-bike either by scanning the QR code on the
+                                        E-scooter or E-bike . If it is dark out, and you are
+                                        continuing to have a hard time scanning the QR code, you
+                                        can either enter it manually or you can turn on the
+                                        flashlight while scanning. If the app prompts an “under
+                                        maintenance” message then the E-scooter or E-bike is
+                                        likely in use by others or under maintenance. Please try
+                                        another nearby.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you find a private lock on a WAYZ or the QR code is
+                                        damaged. Please report the issue to customer service and
+                                        try another E-scooter or E-bike .
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="account" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Account
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Creating An Account
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('account',this)" id="accordion_11"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_11">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        You can create a WAYZ account using your phone number. If
+                                        you sign up using a phone number, you will receive a text
+                                        message with a verification code. Please enter the
+                                        verification code to complete your registration process.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            No verification message
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('account',this)" id="accordion_12"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_12">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you signed up to ride with WAYZ using your phone
+                                        number, you must be able to receive text messages on that
+                                        number. Make sure you don’t have an SMS blocker on your
+                                        device and that you are in an area with good reception. If
+                                        you do not receive the verification message within one
+                                        minute, you can request the code to be resent.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Closing your WAYZ account
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('account',this)" id="accordion_13"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_13">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Please submit a request and our customer support will
+                                        assist you.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                        <div id="promotions" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Promotions
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            WAYZ CREDITS
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('promotions',this)" id="accordion_14"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_14">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        You can earn WAYZ credits by successfully inviting friends
+                                        to ride who are new to WAYZ. You can do this by sharing
+                                        your referral code.
+                                    </p>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        The WAYZ credit amount is subject to change.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            ADDING PROMO CODE
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('promotions',this)" id="accordion_15"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_15">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        To add a (valid) promo code to your account, please go to
+                                        your “Wallet” which can be found in the app sidebar. Then
+                                        tap “Add Promo Code”. Once added, it will automatically be
+                                        applied to your next ride. Please note that only ONE promo
+                                        code can be applied to every ride, and the promo code with
+                                        the closest expiration date will be applied first.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Promo Code not working
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('promotions',this)" id="accordion_16"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_16">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Here are some important things to know about promotions.
+                                    </p>
+                                    <ol class="list-decimal text-gray-600 pl-[20px] pt-[10px]">
+                                        <li class="my-[15px] md:my-0">
+                                            You can see the details of your promotions in the
+                                            "Wallet" section of your app menu.
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            If you're not sure if your promotion applied to your
+                                            most recent trip, check your receipt for the Promotions
+                                            line item
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            You must enter the promotion code to your Wallet within
+                                            the validity period for it to apply
+                                        </li>
+                                        <li class="my-[15px] md:my-0">Promotion codes can have expiration dates</li>
+                                        <li class="my-[15px] md:my-0">Some promotion codes only apply in specific areas
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            Some promotion codes only apply to specific E-scooter(s)
+                                            or E-bike (s)
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            Some promotion codes have limited quantities and are
+                                            applied on a first-come-first served basis
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            Some promotion codes can only be redeemed one time per
+                                            person
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            Some promotion codes are only valid for new users who
+                                            have not take a rider before.
+                                        </li>
+                                        <li class="my-[15px] md:my-0">
+                                            10.Some promotions are unique to a user and cannot be
+                                            transferred to another user
+                                        </li>
+                                        <p>
+                                            If you have reviewed the list above and your promo code
+                                            did not work, please submit a request and we will adjust
+                                            your payment accordingly.
+                                        </p>
+                                    </ol>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                        <div id="safety" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Safety
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Legal age to ride
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('safety',this)" id="accordion_12"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_12">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        You must be the legal age to enter into binding contracts.
+                                        For most countries, this means you need to be 16 years or
+                                        older for scooters, and 16 years or older for our bikes.
+                                        Before signing up for WAYZ, make sure to review the User
+                                        Agreement for your country, which states age requirements.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Use of helmet
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('safety',this)" id="accordion_13"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_13">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        We strongly recommend that you wear a helmet every time
+                                        you ride our bikes and scooters. The helmet should be
+                                        Snell, CPSC, ANSI, or ASTM-approved. It should be sized,
+                                        fitted, and fastened per the manufacturer's instructions.
+                                    </p>
+                                    <p>
+                                        We encourage riders to have two finger lengths between
+                                        their chin and the strap to make sure the helmet is
+                                        securely on their head. The helmet should be comfortable
+                                        and snug on your head
+                                    </p>
+                                    <br />
+                                    <ul class="list-disc">
+                                        <li class="my-[15px] md:my-0">
+                                            It should not move around (for example, it should not
+                                            fall to block your vision or fall behind your head,
+                                            exposing your forehead). While helmet laws vary by
+                                            region, country, and city, please always wear a helmet.
+                                            Helmets and other protective gear are no guarantee
+                                            against personal injury. If you choose not to wear a
+                                            helmet and are injured, you chose to take that risk and
+                                            we are not responsible.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                        <div id="report" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Report
+                            </h1>
+                            <!-- Question 1 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Damaged E-scooter or E-bike
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('report',this)" id="accordion_11"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_11">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you encounter a damaged E-scooter or E-bike , please
+                                        report it through the WAYZ app or by contacting our
+                                        customer support team.
+                                    </p>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        Please use another E-scooter or E-bike instead.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 2 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Illegal Parking
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('report',this)" id="accordion_12"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-10"></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_12">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        If you find an E-scooter or E-bike that is illegally
+                                        parked, please report it through our WAYZ app. Please
+                                        include the plate number under the QR code. Thank you for
+                                        your help in keeping the community a riding-friendly
+                                        place. Suggestions and feedback
+                                    </p>
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        WAYZ is dedicated to serving you in the best possible way.
+                                        Therefore we welcome your feedback and ask you to share
+                                        your thoughts by contacting customer support. Thank you
+                                        for riding with us.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                            <!-- Question 3 -->
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p class="md:text-xl text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Suggestions and feedback
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('report',this)" id="accordion_13"
+                                        class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <i class="fa-solid fa-plus text-[20px] transform duration-100 "></i>
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_13">
+                                    <p class="font-normal text-base leading-6 text-gray-600">
+                                        WAYZ is dedicated to serving you in the best possible way.
+                                        Therefore we welcome your feedback and ask you to share
+                                        your thoughts by contacting customer support.
+                                    </p>
+                                    <br />
+                                    <p>Thank you for riding with us.</p>
+                                </div>
+                            </div>
+                            <hr class="w-full my-8" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq section end -->
+    </main>
+    <footer class="bg-[#525252]">
+        <div class="max-w-[1300px] m-auto px-[20px] 2xl:p-0">
+            <div
+                class="flex justify-between flex-wrap flex-col md:flex-row w-full mx-auto pb-[20px] gap-y-[20px] md:gap-y-0 gap-x-[2%] pt-[50px] md:pt-[80px]">
+                <div class="w-full md:max-w-[200px] md:min-w-[290px]">
+                    <img src="../assets/images/logo/logo.svg" alt="" class="mt-[70p x] w-[50%] max-w-[170px]">
+                    <p class="text-white  text-[13px] mt-[15px] md:mt-[20px]">The first Saudi based
+                        company in its
+                        segment focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility
+                        Driven by
+                        a fun approach with a commitment in developing alternative solutions and in sync with vision
+                        2030.
+                    </p>
+                </div>
+                <div class="text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Help Links</h2>
+                </div>
+                <div class="w-full md:w-[24%] text-white">
+                    <h2 class="mb-[10px] text-[14px] font-bold mr-[10px]">Get In touch</h2>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"> Saudi business center Al-Madinah Al-Munawarah Rd
+                        Jeddah
+                    </p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a
+                            href="mailto:support@wayzco.com">support@mayzo.com</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a
+                            class="block sm:unset py-[10px] text-[#525252] hover:text-[#fff] sm:hover:text-[#91C33F] hover:bg-[#91C33F] sm:hover:bg-[transparent] cursor-pointer px-[12%] sm:px-0 mb-[1px]"
+                            href="faq.html">FAQs</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[13px]"><a href="terms-and-conditions.html">Terms &
+                            conditions</a></p>
+                </div>
+                <div class="w-full md:w-[26%] text-[25px] text-white">
+                    <h3 class="text-[20px]">Subscribe Newsletter</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Enter Your Email Address"
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-full md:min-w-[320px ] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                        <i
+                            class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+                    </div>
+                    <div class="flex justify-start items-center gap-[10px] py-4">
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://www.facebook.com/wayz.sa.7"><i
+                                    class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i></a>
+                        </div>
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://www.instagram.com/wayzsa/"><i
+                                    class="fa-brands fa-instagram text-[18px] text-[#fff]"></i></a>
+                        </div>
+                        <div
+                            class="flex justify-center items-center border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center">
+                            <a href="https://twitter.com/wayzsa1"><i
+                                    class="fa-brands fa-twitter text-[18px] text-[#fff]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#D2DB36]">
+            <div class="max-w-[1140px] m-auto px-[20px] 2xl:p-0">
+                <div class="w-full h-[36px]  flex justify-center items-center">
+                    <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/faq.js"></script>
+</body>
+
+</html>
